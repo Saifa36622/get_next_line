@@ -32,3 +32,13 @@ char	*get_next_line(int fd)
 	size = plus_line(size);
 	return (str);
 }
+
+char	read_file(char *size, int fd)
+{
+	char	*x;
+	int	check;
+	x = malloc (sizeof(char) * BUFFER_SIZE + 1);
+	if (!x)
+		return (0);
+
+}
