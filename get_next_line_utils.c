@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 22:01:25 by smeethon          #+#    #+#             */
-/*   Updated: 2022/12/28 22:15:53 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/12/28 23:04:23 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 char	*ft_strchr(const char *s, int c)
 {
-    if ((char)c == '\0')
+	if ((char)c == '\0')
 		return ((char *)s);
-    while (*s)
+	while (*s)
 	{
 		if (*s == (char)c)
 			return ((char *)s);
@@ -62,3 +62,13 @@ char	*ft_strchr(const char *s, int c)
 //
 //
 // explanation for util -> https://github.com/Saifa36622/libft
+
+size_t	ft_strlen(const char *x)
+{
+	size_t	y;
+
+	y = 0;
+	while (x[y])
+		y++;
+	return (y);
+}
