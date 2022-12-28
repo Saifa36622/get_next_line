@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 23:48:23 by smeethon          #+#    #+#             */
-/*   Updated: 2022/12/28 22:19:18 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/12/28 23:21:45 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *x);
 char	*gen_buffplusread(int   fd, char *ans);
+char    *freetmp(char *ans,char *buff);
 
 #endif

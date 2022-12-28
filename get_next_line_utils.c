@@ -61,7 +61,7 @@ char	*ft_strchr(const char *s, int c)
 // by P earth
 //
 //
-// explanation for util -> https://github.com/Saifa36622/libft
+// explanation for all util -> https://github.com/Saifa36622/libft
 
 size_t	ft_strlen(const char *x)
 {
