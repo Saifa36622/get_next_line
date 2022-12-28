@@ -1,23 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/03 23:48:23 by smeethon          #+#    #+#             */
-/*   Updated: 2022/12/28 22:13:52 by smeethon         ###   ########.fr       */
+/*   Created: 2022/12/28 21:28:31 by smeethon          #+#    #+#             */
+/*   Updated: 2022/12/28 22:13:49 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "get_next_line.h"
 
-# include <unistd.h>
-# include <stdlib.h>
+char *gen_buff(char *buffer)
+{
 
-char	*get_next_line(int fd);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strchr(const char *s, int c);
+}
 
-#endif
+
+
+
+
+char *get_next_line(int fd)
+{
+    static char *buffer;
+    char *ln;
+
+    ln = NULL;
+    if (fd < 0 || read(fd, 0, 0) < 0)
+		return (NULL);
+    buffer = gen_buff(buffer);
+    if (buffer == NULL)
+        return  (NULL);
+    
+
+
+}
+
+
