@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 22:01:25 by smeethon          #+#    #+#             */
-/*   Updated: 2022/12/28 22:15:22 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/12/28 22:15:53 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,6 @@ char	*ft_strchr(const char *s, int c)
 //     return (NULL);
 // }
 // by P earth
-// https://github.com/Saifa36622/libft
+//
+//
+// explanation for util -> https://github.com/Saifa36622/libft
