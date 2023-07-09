@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 22:01:25 by smeethon          #+#    #+#             */
-/*   Updated: 2022/12/28 23:04:23 by smeethon         ###   ########.fr       */
+/*   Updated: 2023/07/09 21:47:05 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,15 @@ char	*ft_strchr(const char *s, int c)
 //
 //
 // explanation for all util -> https://github.com/Saifa36622/libft
+size_t	ft_linelen(const char *x)
+{
+	size_t	y;
+
+	y = 0;
+	while (x[y] != '\0' && x[y] != '\n')
+		y++;
+	return (y);
+}
 
 size_t	ft_strlen(const char *x)
 {
